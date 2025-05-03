@@ -1,0 +1,76 @@
+
+<script>
+    window.scriptLoader = (function() {
+        const addedScripts = [];
+        const loadedScripts = [];
+        const types = {
+            assets: '.',
+            external: ''
+        }
+
+        return {
+            load: function(src, type = "assets") {
+
+                if (types[type]) {
+                    src = types[type] + src;
+                }
+
+                return new Promise(function(resolve, reject) {
+                    let script;
+
+                    if (loadedScripts.indexOf(src) !== -1) {
+                        script = document.querySelector(`script[src="${src}"]`);
+                        resolve(script);
+                    } else {
+                        if (addedScripts.indexOf(src) !== -1) {
+                            script = document.querySelector(`script[src="${src}"]`);
+                        } else {
+                            script = document.createElement('script');
+                            script.src = src;
+                        }
+
+                        script.addEventListener('load', () => {
+                            if (loadedScripts.indexOf(src) === -1) {
+                                loadedScripts.push(src);
+                            }
+                            resolve(script);
+                        }, {once: true})
+
+                        script.addEventListener('error', () => {
+                            reject(new Error(`Ошибка загрузки скрипта ${src}`));
+                        }, {once: true})
+
+                        if (! document.head.querySelector(`script[src="${src}"]`)) {
+                            document.head.append(script);
+                            addedScripts.push(src);
+                        }
+                    }
+                });
+            }
+        }
+    })();
+
+
+    ;(() => {
+        let version = (new Date).getTime();
+
+        function userEventsInit() {
+            window.removeEventListener('scroll', userEventsInit);
+            window.removeEventListener('mousemove', userEventsInit);
+            window.removeEventListener("touchstart", userEventsInit);
+
+            scriptLoader.load('/bx-js/header/header.js?' + version);
+            scriptLoader.load('/bx-js/video/video.js?' + version);
+            scriptLoader.load('/bx-js/advantages/advantages.js?' + version);
+            scriptLoader.load('/bx-js/popup/popup.js?' + version);
+            scriptLoader.load('/bx-js/form/form.js?' + version);
+        }
+
+        window.addEventListener('scroll', userEventsInit);
+        window.addEventListener('mousemove', userEventsInit);
+        window.addEventListener("touchstart", userEventsInit);
+
+        scriptLoader.load('/libs/swiper/swiper-bundle.min.js');
+
+    })();
+</script>

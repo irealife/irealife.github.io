@@ -1,0 +1,48 @@
+.boost {
+  padding: 96px 0;
+  background-color: #444bd3
+}
+.boost__title {
+  margin: 0 auto 20px;
+  max-width: 620px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 140%;
+  text-align: center;
+  color: #fff
+}
+.boost__text {
+  margin: 0 auto 20px;
+  max-width: 744px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 180%;
+  text-align: center;
+  color: #fffFFF8F
+}
+.boost__button {
+  margin: 0 auto;
+  padding: 18px 32px;
+  height: auto;
+  font-size: 16px;
+  line-height: 100%
+}
+@media (max-width:767px) {
+  .boost__title {
+    font-size: 36px
+  }
+  .boost__text {
+    font-size: 18px
+  }
+  .boost__button {
+    padding: 14px 28px;
+    height: auto
+  }
+}
+@media (max-width:501px) {
+  .boost__title {
+    font-size: 32px
+  }
+}

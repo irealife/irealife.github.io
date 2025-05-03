@@ -1,0 +1,45 @@
+.offer {
+  margin: 60px 0
+}
+.offer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px
+}
+.offer__title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 140%
+}
+.offer__title span {
+  color: #444bd3
+}
+.offer__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 180%;
+  color: #1211278F
+}
+.offer__button {
+  padding: 18px 32px;
+  height: auto;
+  font-size: 16px;
+  line-height: 100%
+}
+@media (max-width:950px) {
+  .offer__wrapper {
+    flex-direction: column
+  }
+  .offer__text,
+  .offer__title {
+    text-align: center
+  }
+}
+@media (max-width:767px) {
+  .offer__button {
+    padding: 14px 28px;
+    height: auto
+  }
+}

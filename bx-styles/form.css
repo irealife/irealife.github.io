@@ -1,0 +1,39 @@
+.form {
+  width: 100%;
+  margin-bottom: 22px
+}
+.form__input {
+  margin-bottom: 30px;
+  padding: 12px 19px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  background-color: #fff
+}
+.form__input::-moz-placeholder {
+  color: #898989
+}
+.form__input::placeholder {
+  color: #898989
+}
+.form__button {
+  width: 100%;
+  height: auto;
+  padding: 14px 24px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  background-color: #000
+}
+@media (max-width:767px) {
+  .form__input {
+    margin-bottom: 20px
+  }
+  .form__button {
+    height: auto;
+    padding: 14px 24px
+  }
+}

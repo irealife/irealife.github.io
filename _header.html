@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Avilon</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+
+    <link rel="preload" href="./fonts/Poppins/Poppins-Thin.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Poppins/Poppins-ExtraLight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Poppins/Poppins-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Poppins/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Poppins/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Poppins/Poppins-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Poppins/Poppins-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Poppins/Poppins-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Poppins/Poppins-Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="./libs/swiper/swiper-bundle.min.css">
+<!--    <script type="text/javascript" src="./libs/jquery-3.5.1.min.js"></script>-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header lock-padding">
+    <div class="container">
+        <div class="header__body">
+            <a href="#" class="header__logo">
+                <svg width="88" height="36" viewBox="0 0 88 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M33.4982 7.87509V26.8991H40.2916C45.8604 26.8991 49.1346 23.3658 49.1346 17.341C49.1346 11.316 45.8475 7.87509 40.2916 7.87509H33.4982ZM36.8241 10.7491H39.9436C43.6561 10.7491 45.7443 13.0958 45.7443 17.3541C45.7443 21.6914 43.6818 24.025 39.9436 24.025H36.8241V10.7491Z" fill="#121127"/>
+                    <path d="M51.5453 26.8991H54.755V7.87509H51.5453V26.8991Z" fill="#121127"/>
+                    <path d="M66.5372 22.7198C66.1891 23.88 65.0547 24.6446 63.5594 24.6446C61.4582 24.6446 60.1176 23.1417 60.1176 20.9005V20.7027H69.6695V19.6349C69.6695 15.3898 67.2461 12.6344 63.3661 12.6344C59.4215 12.6344 56.9207 15.548 56.9207 19.9645C56.9207 24.4205 59.3957 27.1758 63.495 27.1758C66.7305 27.1758 69.1282 25.3566 69.5407 22.7198H66.5372ZM63.3789 15.1788C65.2223 15.1788 66.4598 16.5632 66.5243 18.5407H60.1434C60.2723 16.5895 61.5743 15.1788 63.3789 15.1788Z" fill="#121127"/>
+                    <path d="M76.8496 21.8892L79.6855 26.899H83.1918L78.8477 19.8326L83.2434 12.9244H79.7242L77.0043 17.8287H76.9398L74.1812 12.9244H70.5718L74.9418 19.9248L70.5332 26.899H73.9493L76.7852 21.8892H76.8496Z" fill="#121127"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2086 31.4999C20.4947 31.4949 26.3997 25.4528 26.3997 18C26.3997 10.5472 20.4947 4.50494 13.2086 4.5001C18.3711 6.70647 21.9988 11.9199 21.9988 18C21.9988 24.0799 18.3711 29.2934 13.2086 31.4999Z" fill="#121127" fill-opacity="0.32"/>
+                    <path d="M0 9.30054C0 6.64957 2.07363 4.50053 4.63158 4.50053H7.70016C14.9902 4.50053 20.9 10.5446 20.9 18.0004C20.9 25.4562 14.9902 31.5003 7.70016 31.5003H4.63158C2.07363 31.5003 0 29.3512 0 26.7003V9.30054Z" fill="#121127"/>
+                </svg>
+            </a>
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li>
+                        <a href="" class="header__link">Product</a>
+                    </li>
+                    <li>
+                        <a href="" class="header__link">Features</a>
+                    </li>
+                    <li>
+                        <a href="" class="header__link">Marketplace</a>
+                    </li>
+                    <li>
+                        <a href="" class="header__link">Company</a>
+                    </li>
+                </ul>
+                <ul class="header__authorization header__list">
+                    <li>
+                        <a href="" class="header__button button button_white">Sign In</a>
+                    </li>
+                    <li>
+                        <a href="#popup" class="header__button button popup-link">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+

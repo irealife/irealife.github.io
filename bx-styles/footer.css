@@ -1,0 +1,117 @@
+.footer {
+  margin: 56px 0
+}
+.footer__wrapper {
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  border-bottom: 1px solid #1211271F
+}
+.footer__info {
+  max-width: 360px;
+  width: 100%
+}
+.footer__logo {
+  margin-bottom: 24px;
+  display: block
+}
+.footer__text {
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%;
+  color: #1211278F
+}
+.footer__social-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px
+}
+.footer__social-item {
+  width: 24px;
+  height: 24px
+}
+.footer__social-item a {
+  color: #8b898f
+}
+.footer__social-item a:hover {
+  color: #444bd3
+}
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%
+}
+.footer__menu-col {
+  width: calc(100% / 4 - 20px)
+}
+.footer__menu-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180%
+}
+.footer__menu-item a {
+  color: #121127
+}
+.footer__menu-item a:hover {
+  color: #444bd3
+}
+.footer__menu-item:not(:last-child) {
+  margin-bottom: 8px
+}
+.footer__menu-name {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: .8px;
+  text-transform: uppercase;
+  color: #12112766
+}
+.footer__copyright {
+  padding: 37px 0 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  text-align: center;
+  color: #1211278F
+}
+@media (max-width:950px) {
+  .footer__wrapper {
+    flex-direction: column-reverse;
+    gap: 40px
+  }
+  .footer__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%
+  }
+  .footer__text {
+    text-align: center
+  }
+  .footer__menu-col {
+    width: 100%
+  }
+  .footer__menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2px 14px
+  }
+  .footer__menu-item:not(:last-child) {
+    margin-bottom: 0
+  }
+  .footer__menu-name {
+    margin-bottom: 10px;
+    text-align: center
+  }
+}
